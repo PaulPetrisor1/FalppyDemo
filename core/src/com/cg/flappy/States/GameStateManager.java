@@ -23,14 +23,14 @@ public void push(State state){
 
 public void pop(){
 
-    states.pop();
+    states.pop().dispose();
 
 }
 
 public void set(State state){
 
 
-    states.pop();
+    states.pop().dispose();
     states.push(state);
 
 }
